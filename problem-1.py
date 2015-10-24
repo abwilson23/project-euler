@@ -11,11 +11,6 @@ def getMeTheMultiples():
 
     return summe
 
-            
-
-    
-
-
 
 if __name__ == "__main__":
 
