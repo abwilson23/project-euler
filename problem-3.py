@@ -40,7 +40,7 @@ def prime_factor(n):
 if __name__ == "__main__":
 
     print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print ("|          Problem Two          |")
+    print ("|           Problem 3           |")
     print ("|         Andrew Wilson         |")
     print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 
