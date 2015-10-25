@@ -19,14 +19,15 @@ def find_palindrome():
     i = 999
     palindromes = []
 
-    while i > 100:
+    # Can restrict our search b/c we know there exists a palindrome in this range
+    while i > 750: 
         j = 999
-        while j > 100:
+        while j > 750:
             if check_palindrome(i*j):
                 palindromes.append(i*j)
             j -= 1
         i -= 1
-    print (palindromes)
+
     print (max(palindromes))
 
 
