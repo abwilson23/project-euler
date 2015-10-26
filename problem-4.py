@@ -2,33 +2,18 @@
 # https://projecteuler.net/problem=4
 
 
-def check_palindrome(n):
-
-    p = list(str(n))
-
-    for i in range(0, len(p) / 2):
-
-        if p[i] != p[len(p) - 1 - i]:
-            return False
-
-    return True
-
-
 def find_palindrome():
 
-    i = 999
-    palindromes = []
+    pal = 0
 
-    # Can restrict our search b/c we know there exists a palindrome in this range
-    while i > 750: 
-        j = 999
-        while j > 750:
-            if check_palindrome(i*j):
-                palindromes.append(i*j)
-            j -= 1
-        i -= 1
+    # Can restrict our search b/c we want 3-digits factors 
+    for i in range(999, 100, -1): 
+        for j in range(999, 100, -1):
+            if str(i*j) == str(i*j)[::-1]:
+                if i*j > pal:
+                   pal = i*j 
 
-    print (max(palindromes))
+    print (pal)
 
 
 if __name__ == "__main__":
