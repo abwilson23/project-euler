@@ -17,6 +17,18 @@ def prime_check(n):
 
     return True
 
+def find_prime():
+
+    i = 2
+    primes = []
+
+    while len(primes) < 10001:
+        
+        if prime_check(i):
+            primes.append(i)
+        i += 1
+
+    return primes[-1]
 
 if __name__ == "__main__":
 
@@ -25,3 +37,4 @@ if __name__ == "__main__":
     print ("|         Andrew Wilson         |")
     print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
 
+    print find_prime()
