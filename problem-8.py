@@ -1,8 +1,6 @@
 # Problem 8
 # https://projecteuler.net/problem=8
 
-import math
-
 
 if __name__ == "__main__":
 
