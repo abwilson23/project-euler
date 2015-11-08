@@ -34,7 +34,7 @@ int main(int argc, char* argv[]) {
         while (digit != NULL) {
             index = (int)(strchr(digit, '0') - digit);
             if (index == 0)
-                digit = digit + 1;
+                digit++; // Increment pointer to drop first digit if it's a 0
             grid[i][j] = (int) strtol(digit, (char **)NULL, 10); // found here: http://stackoverflow.com/questions/7021725/converting-string-to-integer-c
             j++;
             digit = strtok(NULL, " ");
@@ -69,7 +69,7 @@ int main(int argc, char* argv[]) {
     printf("||          Problem 11         ||\n");
     printf("||        Andrew Wilson        ||\n");
     printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-    printf("The maximal product is: %d\n", largest);
+    printf("\nThe maximal product is: %d\n", largest);
 }
 
 void check(int t, int* l) {
