@@ -1,3 +1,6 @@
+// Problem 11
+// https://projecteuler.net/problem=11
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -61,6 +64,11 @@ int main(int argc, char* argv[]) {
             }
         }
     }
+
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("||          Problem 11         ||\n");
+    printf("||        Andrew Wilson        ||\n");
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
     printf("The maximal product is: %d\n", largest);
 }
 
