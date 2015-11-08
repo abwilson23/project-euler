@@ -15,7 +15,6 @@ int main(int argc, char* argv[]) {
     FILE* infile;
     char *buffer = NULL;
     char *digit = NULL;
-    size_t read = 0;
     size_t len = 0;
 
     // A little error handling in the unlikely event of anyone actually trying to use this 
@@ -27,7 +26,7 @@ int main(int argc, char* argv[]) {
     }
 
     // Read the file and parse information into a 2D array
-    while ((read = getline(&buffer, &len, infile)) != -1) { 
+    while (getline(&buffer, &len, infile) != -1) { 
         digit = strtok(buffer, " ");
         while (digit != NULL) {
             index = (int)(strchr(digit, '0') - digit);
