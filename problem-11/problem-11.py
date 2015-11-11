@@ -3,7 +3,6 @@
 
 import sys
 
-
 def search_grid():
 
     grid = [] 
@@ -28,13 +27,11 @@ def search_grid():
                 largest = check(temp, largest)
     
     print ("The maximal product is: {}".format(largest))
-                
 
 def check(t, l):
     if t > l:
         l = t
     return l
-
 
 if __name__ == "__main__":
 
