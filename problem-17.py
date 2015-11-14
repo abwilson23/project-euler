@@ -4,6 +4,7 @@
 from num2words import num2words
 
 def count_letters():
+
     letter_count = 0
     for i in range(1, 1001):
         letter_count += len(filter(lambda s: s not in ' -', num2words(i)))
