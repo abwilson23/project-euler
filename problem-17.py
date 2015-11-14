@@ -11,7 +11,6 @@ def count_letters():
 
     print (letter_count)
 
-
 if __name__ == "__main__":
 
     print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
