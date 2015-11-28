@@ -5,6 +5,7 @@
 def counting_sundays():
     # Sundays falling on first day of the month between 1901-2000
     # Will work on this tomorrow, no time!
+    # Make enums for months? Or just count everything? 
 
 if __name__ == "__main__":
 
