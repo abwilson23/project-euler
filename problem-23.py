@@ -11,7 +11,7 @@ def factorsum(n):
 if __name__ == "__main__":
 
     print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    print ("|          Problem 14           |")
+    print ("|          Problem 23           |")
     print ("|         Andrew Wilson         |")
     print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
     
